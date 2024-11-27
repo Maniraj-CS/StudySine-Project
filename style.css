@@ -412,3 +412,65 @@ body{
 .c4-card:nth-child(6){
     background-color: #7d78b1;
 }
+
+.testimonial-container{
+    background-color: var(--background-color);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.testimonial-text{
+    font-weight: bold;
+    font-size: 1.875rem;
+}
+
+.testimonial-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.testimonial-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    grid-gap: 2rem;
+}
+
+.testy-card{
+    border: 1px solid rgb(195, 191, 191);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgb(0,0,0,0.1);
+    padding: 1.2rem;
+    gap: 1rem;
+    transition: transform 0.3s ease , box-shadow 0.3s ease ;
+    
+}
+
+.testy-card:hover{
+    transform: scale(1.05);
+    box-sizing: 0 4px 8px rgb(0,0,0,0,2) ;
+    border: 1px solid blue;
+}
+
+.testy-img img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.testy-headding{
+    font-size: 0.875rem;
+    color: #555;
+}
+
+.testy-name{
+    font-size: 1rem;
+    color: var(--link-color);
+}
+
+.testy-des{
+    font-size: 0.875rem;
+    color:#777;
+}
