@@ -277,7 +277,7 @@ body{
 
 }
 
-@media screen and (min-width:640px) {
+@media screen and (min-width:655px) {
        .icone-section{
         grid-template-columns: repeat(4,1fr);
        }
@@ -474,3 +474,114 @@ body{
     font-size: 0.875rem;
     color:#777;
 }
+
+.news-section{
+    background-color: var(--background-color);
+    max-width: 1280px;
+    height: 50vh;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.news-container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--light-gray);
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.news-img-sec{
+    height: 100%;
+    width: 47%;
+    position: relative;
+    display: none;
+   
+}
+
+.news-img-sec img{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (min-width:650px){
+    .news-img-sec{
+        display: block;
+    }
+
+    .news-info{
+        padding-left: 3rem;
+    }
+}
+
+.news-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.5rem;
+    gap: 1rem;
+    text-align: start;
+}
+
+.news-link-sec span{
+    font-size: 0.8rem ;
+    color: var(--gray);
+}
+
+.news-para{
+    color: #777;
+    font-size: 0.8rem;
+}
+
+.news-title{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.news-form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.news-form input{
+    background-color: var(--background-color);
+    color: #333;
+    outline: none;
+    border: 1px solid #ccc ;
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+}
+
+.news-form input:focus{
+    border-color: #5254f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.news-button{
+    background-color:  var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+
+.news-button:hover{
+    background-color: var(--accent-color);
+}
+
+.news-link-sec a{
+    text-decoration: underline;
+    color: #2563eb;
+}
+
+
+
+
