@@ -582,6 +582,131 @@ body{
     color: #2563eb;
 }
 
+.last-container{
+    background-color: var(--background-color);
+    max-width: 1280px;
+    height: 50%; 
+    padding: 0 2rem;
+    padding-top: 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+
+
+.last-left-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: start;
+    width: 60%;
+}
+
+.last-title{
+    display: flex;
+    gap: 0.4rem;
+}
+
+.last-title img{
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.last-title p{
+   font-size: 1.6rem;
+   font-weight: bold;
+   position: relative;
+   bottom: 0.2rem;
+   color: var(--text-color);
+}
+
+.last-para{
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+}
+
+.last-links{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.last-hyper:nth-child(3) img{
+    width: 22px;
+}
+
+.last-top{
+    display: flex;
+}
+
+
+.last-right-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+@media screen and (max-width:1000px){
+        .last-top{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .last-left-box{
+            text-align: center;
+            align-items: center;
+            width: 100%;
+        }
+
+}
+
+.lats-card p{
+   color: #333333;
+   font-weight: bold;
+   margin-bottom: 2rem;
+   font-size: 1.2rem;
+   display: flex;
+   text-align: start;
+}
+
+@media screen and (max-width:1000px){
+    .lats-card{
+        margin-top: 2.5rem;
+    }
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    text-align: start;
+    color: var(--gray);
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.last-button{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    color: var(--dark-gray);
+    border-top: 1px solid var(--dark-gray);
+    padding-top: 1.5rem;
+}
+
+@media screen and (max-width:668px){
+  
+    .last-right-box{
+        grid-template-columns: repeat(2 , 1fr);
+        padding: 5rem;
+    }
+
+}
+
 
 
 
